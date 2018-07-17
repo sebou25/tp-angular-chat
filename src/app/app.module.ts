@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CreatCountComponent } from './creat-count/creat-count.component';
 import { DisplayMsgComponent } from './display-msg/display-msg.component';
-import { ConnectedComponent } from './connected/connected.component';
+import { ConnectionComponent } from './connection/connection.component';
 
 
 @NgModule({
@@ -12,7 +12,7 @@ import { ConnectedComponent } from './connected/connected.component';
     AppComponent,
     CreatCountComponent,
     DisplayMsgComponent,
-    ConnectedComponent,
+    ConnectionComponent,
    
   ],
   imports: [
@@ -26,9 +26,9 @@ import { ConnectedComponent } from './connected/connected.component';
         path: "displayMsg",
         component: DisplayMsgComponent
       },
-      {
-      path: "connected",
-      component: ConnectedComponent
+    {
+      path: "connection",
+      component: ConnectionComponent
     }
     ])
   ],
