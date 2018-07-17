@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InjectTabService } from '../inject-tab.service';
 
 @Component({
   selector: 'app-creat-count',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./creat-count.component.css']
 })
 export class CreatCountComponent implements OnInit {
-
-  constructor() { }
+  userTab;
+  constructor(private myservice: InjectTabService) { }
 
   ngOnInit() {
+
+    this.userTab = this.myservice.usersTab;
   }
 
 }
