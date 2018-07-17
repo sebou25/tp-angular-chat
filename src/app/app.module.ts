@@ -4,12 +4,16 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CreatCountComponent } from './creat-count/creat-count.component';
 import { DisplayMsgComponent } from './display-msg/display-msg.component';
+import { ConnectedComponent } from './connected/connected.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CreatCountComponent,
-    DisplayMsgComponent
+    DisplayMsgComponent,
+    ConnectedComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -21,7 +25,11 @@ import { DisplayMsgComponent } from './display-msg/display-msg.component';
       {
         path: "displayMsg",
         component: DisplayMsgComponent
-      }
+      },
+      {
+      path: "connected",
+      component: ConnectedComponent
+    }
     ])
   ],
   providers: [],
