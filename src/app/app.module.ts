@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { CreatCountComponent } from './creat-count/creat-count.component';
 import { DisplayMsgComponent } from './display-msg/display-msg.component';
 import { ConnectionComponent } from './connection/connection.component';
+import { InjecttabService } from './inject-tab.service';
 
 
 @NgModule({
@@ -32,7 +33,7 @@ import { ConnectionComponent } from './connection/connection.component';
     }
     ])
   ],
-  providers: [],
+  providers: [InjecttabService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
