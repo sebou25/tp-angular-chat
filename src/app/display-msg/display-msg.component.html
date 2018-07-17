@@ -1,17 +1,27 @@
-
-
 <div class="titrePerConct">
-    <h2>PERSONNE CONNECTE</h2>
-    <h3>personne1</h3>
-    <h3>personne2</h3>
-    <h3>personne3</h3>
-  </div>
-  <div class="recpMsg">
-    
-  </div>
+  <h2>PERSONNE CONNECTE</h2>
+  <h3>personne1</h3>
+  <h3>personne2</h3>
+  <h3>personne3</h3>
+</div>
+<div class="recpMsg">
 
-   <div class="titreTchat">
-    <h2 class="titreTchat">TCHAT</h2>
+  <table>
+    <tr>
+      <th>auteur</th>
+      <th>message</th>
+      <th>heure</th>
+    </tr>
+    <tr *ngFor = "let msg of messages">
+        <td>{{msg.auteur}}</td>
+        <td>{{msg.message}}</td>
+        <td>{{msg.heure}}</td>
+    </tr>
+  </table>
 
-    <input class="boiteMsg" type="text" placeholder="taper message"><button class="btEnv">ENVOYER</button>
-  </div>  
+</div>
+<div class="titreTchat">
+  <h2 class="titreTchat">TCHAT</h2>
+  <input class="boiteMsg" type="text" placeholder="taper message">
+  <button class="btEnv">ENVOYER</button>
+</div>
