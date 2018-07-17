@@ -1,0 +1,22 @@
+.titrePerConct{
+    border: solid 1px #248dd8 ; 
+    width: 20%;
+    padding: 10px;
+}
+.boiteMsg{
+    width: 93%;
+    padding: 8px;
+    border: solid 2PX #248dd8 ;
+    border-right: white;
+}
+.btEnv{
+    padding: 8px;
+    background-color: rebeccapurple;
+    color: white;
+    border-color: #248dd8 ;
+}
+
+.titreTchat{
+    text-align: center;
+    margin-top: 15%;
+}
