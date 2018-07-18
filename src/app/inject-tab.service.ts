@@ -7,7 +7,7 @@ export class InjectTabService {
 
   constructor() { }
 
- 
+ g
      userTab = [
       { nom: "Alice", pseudo: "alice5", email: "alice@gmail.com", password: "alice5" },
       { nom: "Sophie", pseudo: "sophie6", email: "sophie@gmail.com", password: "sophie6" },
@@ -24,7 +24,13 @@ export class InjectTabService {
       {auteur: "Michel", message:"Salut,c'est Michel", heure:"10h55"},
       {auteur: "Noemie", message:"Hello, on va voir le match à quelle heure?", heure:"10h55"},
     ];
-   
+
+   donneHeure = function(){
+     var d = new Date();
+     var h = d.getHours();
+     var m = d.getMinutes();
+     return h+":"+m;
+   }
   }
 
 

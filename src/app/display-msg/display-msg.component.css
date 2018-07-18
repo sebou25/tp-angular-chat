@@ -20,3 +20,13 @@
     text-align: center;
     margin-top: 15%;
 }
+.tableauMess{
+    border: #248dd8 solid 2px;
+}
+.tableauMess table{
+    display:flex;
+    justify-content: center;
+}
+table{
+    padding: 20px;
+}
