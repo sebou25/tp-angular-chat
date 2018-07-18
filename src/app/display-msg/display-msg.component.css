@@ -2,6 +2,8 @@
     border: solid 1px #248dd8 ; 
     width: 20%;
     padding: 10px;
+    margin-bottom: 20px;
+    
 }
 .boiteMsg{
     width: 93%;
@@ -16,10 +18,7 @@
     border-color: #248dd8 ;
 }
 
-.titreTchat{
-    text-align: center;
-    margin-top: 15%;
-}
+
 .tableauMess{
     border: #248dd8 solid 2px;
 }
@@ -29,4 +28,11 @@
 }
 table{
     padding: 20px;
+}
+.titreTchat
+{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    bottom: 0;
+    margin-top: 160px;
 }
