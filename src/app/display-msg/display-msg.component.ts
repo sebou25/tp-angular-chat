@@ -7,17 +7,11 @@ import { InjectTabService} from '../inject-tab.service';
   styleUrls: ['./display-msg.component.css']
 })
 export class DisplayMsgComponent implements OnInit {
-  constructor() { }
-  // messages;
-    messages = [
-      {auteur: "Alice", message:"Salut,comment ça va?", heure:"10h55"},
-      {auteur: "Michel", message:"Salut,c'est Michel", heure:"10h55"},
-      {auteur: "Noemie", message:"Hello, on va voir le match à quelle heure?", heure:"10h55"},
-    ];
-
+  constructor(private myserveice: InjectTabService) { }
+  messages;
   ngOnInit() {
 
-    // this.messages = InjectTabService.msgTab();
+    this.messages = this.myserveice.msgTab();
 
   }
 
