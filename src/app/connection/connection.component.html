@@ -3,14 +3,13 @@
 <h2>Se connecter à TCHAT</h2>
 
 <div class="nomPass">
-  <form>
-    <label>Votre pseudo
-      <input class="inputSpeudo" #pseudoe type="text" placeholder="Speudo" autofocus required>
-    </label>
-    <label>Votre password
-      <input type="text" type="password" placeholder="Password" required>
-    </label>
-    <br>
-    <button type="reset" (click)="storePseudo(pseudoe.value)" routerLink="displayMsg">Valider</button>
-  </form>
-</div>
+
+  <label>Votre pseudo</label>
+  <input #pseudoe type="text" placeholder="Speudo" autofocus required>
+
+  <label>Votre password</label>
+  <input #pass type="password" placeholder="Password" required>
+
+  <button (click) = "connection(pseudoe,pass)" routerLink ="displayMsg">Valider</button>
+
+  </div>

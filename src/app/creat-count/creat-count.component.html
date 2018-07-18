@@ -7,22 +7,24 @@
       <label>Entrer votre nom</label>
     <input class="inputCreat" type="text" #nome placeholder="Nom" autofocus required>
 
+  <div id="nomClt">
+
+    <label>Entrer votre nom</label>
+    <input type="text" #nome placeholder="Nom" autofocus required>
+
     <label>Entrer votre pseudo</label>
-    <input class="inputCreat" type="text" #pseudoe placeholder="Pseudo" required>
+    <input type="text" #pseudoe placeholder="Pseudo" autofocus required>
 
     <label>Entrer votre e-mail</label>
 
-    <input class="inputCreat" type="email" name="email" #emaile placeholder="E-mail" required>
-
     <label>Entrer votre password</label>
-    <input class="inputCreat" type="password" #passe placeholder="Password" required>
-    <br>
-    <button type="reset"  routerLink="displayMsg" (click)="creatUser(passe.value, emaile.value, pseudoe.value, nome.value)">Valider</button>
-  </fieldset>
-  </form>
-</div>
-<!-- ici on recupere la valeur saisie -->
-<!-- <input type="text" #msge placeholder="entrer nom"> 
+    <input type="password"  #passe placeholder="Password" required>
+
+    <button routerLink="displayMsg" (click) = "creatUser(passe, emaile, pseudoe, nome)">Valider</button>
+
+  </div>
+  <!-- ici on recupere la valeur saisie -->
+  <!-- <input type="text" #msge placeholder="entrer nom">
 <button (click) = "affMsg(msge.value)">recupérer saisie</button> -->
 <p>{{ pass }}</p>
 <p>{{ email }}</p>
