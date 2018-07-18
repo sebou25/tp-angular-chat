@@ -18,13 +18,13 @@ export class CreatCountComponent implements OnInit {
   email = '';
   pseudo = '';
   nom = '';
-  creatUser(pass,email, pseudo, nom) {
+  creatUser(pass, email, pseudo, nom) {
     this.pass = pass;
-   this.email = email;
-   this.pseudo = pseudo;
-   this.nom = nom;
-//injecter les saisie (creatUser) des input dans le tableau(userTab)
-   this.userTab.push({nom:this.nom, pseudo:this.pseudo, email:this.email, password:this.pass});
+    this.email = email;
+    this.pseudo = pseudo;
+    this.nom = nom;
+    //injecter les saisie (creatUser) des input dans le tableau(userTab)
+    this.userTab.push({ nom: this.nom, pseudo: this.pseudo, email: this.email, password: this.pass });
   }
-  
+
 }
