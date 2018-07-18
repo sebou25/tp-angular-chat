@@ -9,19 +9,9 @@ import { Inject } from '@angular/compiler/src/core';
 })
 export class DisplayMsgComponent implements OnInit {
   constructor(private myservice: InjectTabService) { }
-<<<<<<< HEAD
   messages;
   ngOnInit() {
 
     this.messages = this.myservice.userTab;
-=======
- tableau;
-  
-
-  ngOnInit() {
-
-    this.tableau = this.myservice.userTab;
->>>>>>> 6486aa00f44b8a93a91cb6e40cc2d794a0f8d87e
-
   }
 }
