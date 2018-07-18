@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { InjectTabService} from '../inject-tab.service';
+import { InjectTabService } from '../inject-tab.service';
 import { Inject } from '@angular/compiler/src/core';
 
 @Component({
@@ -9,8 +9,8 @@ import { Inject } from '@angular/compiler/src/core';
 })
 export class DisplayMsgComponent implements OnInit {
   constructor(private myservice: InjectTabService) { }
- tableau;
-  
+  tableau;
+
 
   ngOnInit() {
 
