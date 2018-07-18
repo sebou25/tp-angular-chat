@@ -5,18 +5,24 @@
   <div id="nomClt">
     
     <label>Entrer votre nom</label>
-    <input type="text" placeholder="Nom" autofocus required>
+    <input type="text" #nome placeholder="Nom" autofocus required>
     
     <label>Entrer votre pseudo</label>
-    <input type="text" placeholder="Speudo" autofocus required>
+    <input type="text" #pseudoe placeholder="Pseudo" autofocus required>
     
+    <label>Entrer votre e-mail</label>
+    <input type="text" #emaile placeholder="E-mail" required>
+
     <label>Entrer votre password</label>
-    <input type="text" placeholder="Password" required>
+    <input type="text"  #passe placeholder="Password" required>
 
-    <label>Confirmer votre password</label>
-    <input type="text" placeholder="Password" required>
-
-    <button routerLink="displayMsg">Valider</button>
-
+    <button routerLink="displayMsg" (click) = "creatUser(passe.value, emaile.value, pseudoe.value, nome.value)">Valider</button>
+    
   </div>
-
+  <!-- ici on recupere la valeur saisie -->
+  <!-- <input type="text" #msge placeholder="entrer nom"> 
+<button (click) = "affMsg(msge.value)">recupérer saisie</button> -->
+<p>{{ pass }}</p> 
+<p>{{ email }}</p>
+<p>{{ pseudo }}</p>
+<p>{{ nom }}</p>
