@@ -20,14 +20,18 @@ h1{
     margin-left: -8px;
     margin-right: -8px;
     margin-top: -8px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
+
 .nav{
     justify-content: space-evenly;
     display: flex;
     background: #248dd8;
     margin: 60px;
     margin-left: -8px;
-    margin-right: -8px;
+    margin-right: 0px;
     }
 input,a{
     margin: 15px;
