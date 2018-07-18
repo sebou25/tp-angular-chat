@@ -25,6 +25,24 @@
 </div>
 <div class="titreTchat">
   <h2 class="titreTchat">TCHAT</h2>
-  <input class="boiteMsg" type="text" placeholder="taper message">
-  <button class="btEnv">ENVOYER</button>
+  <input class="boiteMsg" #messagee type="text" placeholder="taper message">
+  <button class="btEnv"  (click) = "creatMessage(messagee.value)">ENVOYER</button>
+  <!-- <button routerLink="displayMsg" (click) = "creatUser(passe.value, emaile.value, pseudoe.value, nome.value)">Valider</button>
+     -->
 </div>
+
+<table>
+  <tr>
+    <th>auteur</th>
+    <th>message</th>
+    <th>heure</th>
+   
+  </tr>
+  <tr *ngFor = "let msg of messages">
+      <td>{{msg.auteur}}</td>
+      <td>{{msg.message}}</td>
+      <td>{{msg.heure}}</td>
+    
+
+  </tr>
+</table>

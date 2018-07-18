@@ -24,7 +24,13 @@ export class InjectTabService {
       {auteur: "Michel", message:"Salut,c'est Michel", heure:"10h55"},
       {auteur: "Noemie", message:"Hello, on va voir le match à quelle heure?", heure:"10h55"},
     ];
-   
+
+   donneHeure = function(){
+     var d = new Date();
+     var h = d.getHours();
+     var m = d.getMinutes();
+     return h+":"+m;
+   }
   }
 
 
