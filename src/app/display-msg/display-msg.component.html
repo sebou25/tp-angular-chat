@@ -9,7 +9,7 @@
   <!-- <tr>
     <th>auteur</th>
     <th>message</th>
-    <th>heure</th>  
+    <th>heure</th>
   </tr> -->
   <tr *ngFor = "let msg of messages">
       <td>{{msg.auteur}}</td>
@@ -37,10 +37,9 @@
 
 </div> -->
 <div class="titreTchat">
- 
+
   <input class="boiteMsg" #messagee type="text" placeholder="taper message">
-  <button class="btEnv"  (click) = "creatMessage(messagee.value)">ENVOYER</button>
+  <button class="btEnv"  (click) = "creatMessage(messagee)">ENVOYER</button>
   <!-- <button routerLink="displayMsg" (click) = "creatUser(passe.value, emaile.value, pseudoe.value, nome.value)">Valider</button>
      -->
 </div>
-
