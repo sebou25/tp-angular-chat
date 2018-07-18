@@ -12,7 +12,7 @@ export class CreatCountComponent implements OnInit {
 
   ngOnInit() {
 
-    this.userTab = this.myservice.usersTab;
+    this.userTab = this.myservice.userTab;
   }
 
 }

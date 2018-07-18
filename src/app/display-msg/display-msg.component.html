@@ -8,14 +8,16 @@
 
   <table>
     <tr>
-      <th>auteur</th>
-      <th>message</th>
-      <th>heure</th>
+      <th>nom</th>
+      <th>pseudo</th>
+      <th>email</th>
+      <th>password</th>
     </tr>
     <tr *ngFor = "let msg of messages">
-        <td>{{msg.auteur}}</td>
-        <td>{{msg.message}}</td>
-        <td>{{msg.heure}}</td>
+        <td>{{msg.nom}}</td>
+        <td>{{msg.pseudo}}</td>
+        <td>{{msg.email}}</td>
+        <td>{{msg.password}}</td>
     </tr>
   </table>
 

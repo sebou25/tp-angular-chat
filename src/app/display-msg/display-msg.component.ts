@@ -7,12 +7,11 @@ import { InjectTabService} from '../inject-tab.service';
   styleUrls: ['./display-msg.component.css']
 })
 export class DisplayMsgComponent implements OnInit {
-  constructor(private myserveice: InjectTabService) { }
+  constructor(private myservice: InjectTabService) { }
   messages;
   ngOnInit() {
 
-    this.messages = this.myserveice.msgTab();
+    this.messages = this.myservice.userTab;
 
   }
-
 }
