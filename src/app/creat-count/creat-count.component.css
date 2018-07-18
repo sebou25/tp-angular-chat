@@ -1,0 +1,43 @@
+h1,h2{
+    color: rgb(107, 0, 128);
+    text-align: center;
+}
+input:required
+{
+    border-color: rebeccapurple;
+    box-shadow: black 3px 3px 4px;
+    padding: 5px;
+}
+#nomClt{
+      
+    width: 100px;
+    margin: 0px auto;
+    margin-top: 60px;
+    margin-right: 50%;        
+    }
+input{
+    margin: 15px;
+}
+label{
+   display: flex;  
+}
+button{
+    border-radius: 10px;
+    color: white;
+    background-color: #248dd8;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: -webkit-grab; cursor: grab;
+}
+legend{
+    margin-bottom: 20px;
+    font-weight: bolder;
+    padding: 5px;
+    font-size: 15px;
+}
+fieldset{
+border-color: #248dd8;
+}
+
+

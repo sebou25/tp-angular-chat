@@ -1,17 +1,55 @@
+*{margin : 0 ;
+   Padding : 0 ;
+   Border : 0 ; /*fait sauter les bordures bleues des cadres */
+   Outline : 0 ; /* permet d’enlever la tabulation (pour les males voyants on la                                                                               r                               remettra pour le nav)*/ 
+}
+
+
 h1{
-    color: teal;
+    color: white;
     text-align: center
 }
-.nomPass{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 180px;
-        
+.btn{
+    color: white;
+    background: rebeccapurple;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    cursor: -webkit-grab; cursor: grab;
+
+}
+.btn:hover{
+    color: rebeccapurple;
+    background-color: white;
+    font-weight: bolder;
+    cursor: -webkit-grab; cursor: grab;
+}
+.container{
+    background: rebeccapurple;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    padding-top: 50px;
+}
+
+.nav{
+    justify-content: space-evenly;
+    display: flex;
+    background: #248dd8;
+    margin: 60px;
+    margin-left: -8px;
+    margin-right: 0px;
     }
 input,a{
     margin: 15px;
 }
+
 button{
     border-radius: 10px;
+}
+a{
+    text-decoration: none;
 }

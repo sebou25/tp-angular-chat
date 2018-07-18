@@ -1,3 +1,30 @@
-<p>
-  creat-count works!
-</p>
+<h1>CREATE YOUR NEW ACCOUNT</h1>
+
+<div id="nomClt">
+  <form action="/action_page.php">
+    <fieldset>
+    <legend>Veuillez compléter le formulaire</legend>
+      <label>Entrer votre nom</label>
+    <input class="inputCreat" type="text" #nome placeholder="Nom" autofocus required>
+
+    <label>Entrer votre pseudo</label>
+    <input class="inputCreat" type="text" #pseudoe placeholder="Pseudo" required>
+
+    <label>Entrer votre e-mail</label>
+
+    <input class="inputCreat" type="email" name="email" #emaile placeholder="E-mail" required>
+
+    <label>Entrer votre password</label>
+    <input class="inputCreat" type="password" #passe placeholder="Password" required>
+    <br>
+    <button type="reset"  routerLink="displayMsg" (click)="creatUser(passe.value, emaile.value, pseudoe.value, nome.value)">Valider</button>
+  </fieldset>
+  </form>
+</div>
+<!-- ici on recupere la valeur saisie -->
+<!-- <input type="text" #msge placeholder="entrer nom"> 
+<button (click) = "affMsg(msge.value)">recupérer saisie</button> -->
+<p>{{ pass }}</p>
+<p>{{ email }}</p>
+<p>{{ pseudo }}</p>
+<p>{{ nom }}</p>

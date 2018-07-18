@@ -1,25 +1,38 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CreatCountComponent } from './creat-count/creat-count.component';
-import { DiscutionComponent } from './discution/discution.component';
+import { DisplayMsgComponent } from './display-msg/display-msg.component';
+import { ConnectionComponent } from './connection/connection.component';
+import { InjectTabService } from './inject-tab.service';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CreatCountComponent,
-    DiscutionComponent
+    DisplayMsgComponent,
+    ConnectionComponent,  
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([/*permet d'indiquer au module les changement de page*/
+    RouterModule.forRoot([
       {
-        path: 'crea-count', /*permet de pointer sur le component newrott*/
-        component: NewrottComponent
-      }
+        path: "creatCount",
+        component: CreatCountComponent
+      },
+      {
+        path: "displayMsg",
+        component: DisplayMsgComponent
+      },
+    {
+      path: "connection",
+      component: ConnectionComponent
+    }
+    ])
   ],
-  providers: [],
+  providers: [InjectTabService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
