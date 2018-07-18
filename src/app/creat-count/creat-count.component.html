@@ -3,26 +3,26 @@
   <h2>Veuillez compléter le formulaire ci-dessous :</h2>
 
   <div id="nomClt">
-    
+
     <label>Entrer votre nom</label>
     <input type="text" #nome placeholder="Nom" autofocus required>
-    
+
     <label>Entrer votre pseudo</label>
     <input type="text" #pseudoe placeholder="Pseudo" autofocus required>
-    
+
     <label>Entrer votre e-mail</label>
     <input type="text" #emaile placeholder="E-mail" required>
 
     <label>Entrer votre password</label>
-    <input type="text"  #passe placeholder="Password" required>
+    <input type="password"  #passe placeholder="Password" required>
 
-    <button routerLink="displayMsg" (click) = "creatUser(passe.value, emaile.value, pseudoe.value, nome.value)">Valider</button>
-    
+    <button routerLink="displayMsg" (click) = "creatUser(passe, emaile, pseudoe, nome)">Valider</button>
+
   </div>
   <!-- ici on recupere la valeur saisie -->
-  <!-- <input type="text" #msge placeholder="entrer nom"> 
+  <!-- <input type="text" #msge placeholder="entrer nom">
 <button (click) = "affMsg(msge.value)">recupérer saisie</button> -->
-<p>{{ pass }}</p> 
+<p>{{ pass }}</p>
 <p>{{ email }}</p>
 <p>{{ pseudo }}</p>
 <p>{{ nom }}</p>
