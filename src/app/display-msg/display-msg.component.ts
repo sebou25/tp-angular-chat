@@ -12,6 +12,7 @@ export class DisplayMsgComponent implements OnInit {
   //declaration des variables
  tableau;
  messages;
+ auteur = sessionStorage.getItem('pseudo');
  
 
   ngOnInit() {
@@ -27,6 +28,6 @@ export class DisplayMsgComponent implements OnInit {
     this.messageSaisi = messageSaisi;
   
 //injecter les saisie (creatUser) des input dans le tableau(userTab)
-   this.messages.push({auteur:"alice", message:this.messageSaisi, heure:this.myservice.donneHeure()});
+   this.messages.push({auteur:this.auteur, message:this.messageSaisi, heure:this.myservice.donneHeure()});
   }
 }

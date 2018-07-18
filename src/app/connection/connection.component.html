@@ -5,11 +5,12 @@
 <div class="nomPass">
 
   <label>Votre pseudo</label> 
-  <input type="text" placeholder="Speudo" autofocus required>
+  <input #pseudoe type="text" placeholder="Speudo" autofocus required>
 
   <label>Votre password</label> 
   <input type="text" placeholder="Password" required>
 
-  <button routerLink ="displayMsg">Valider</button>
+  <button (click) = "storePseudo(pseudoe.value)" routerLink ="displayMsg">Valider</button>
 
   </div>
+
