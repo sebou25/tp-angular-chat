@@ -17,13 +17,13 @@ export class ConnectionComponent implements OnInit {
   connection(psd,pass) {
     var vall = this.myservice.findPseudo(psd.value,this.myservice.userTab);
     if(vall == null){
-      alert("Pseudo n'existe pas");
+      alert("This pseudo does not exist");
     }else{
       if(Md5.hashStr(pass.value) == vall.password){
         sessionStorage.setItem('pseudo', psd.value);
         psd.value = "";
         pass.value = "";
-        alert("Connecter");
+        alert("You are connected");
         this.router.navigateByUrl('displayMsg');
       }else{
         pass.value = "";
