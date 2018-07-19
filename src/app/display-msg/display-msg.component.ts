@@ -9,15 +9,10 @@ import { Inject } from '@angular/compiler/src/core';
 })
 export class DisplayMsgComponent implements OnInit {
   constructor(private myservice: InjectTabService) { }
-<<<<<<< HEAD
-  tableau;
-
-=======
   //declaration des variables
  tableau;
  messages;
  
->>>>>>> 36858953d8417cad8ca285671acb02e9989589ba
 
   ngOnInit() {
 //recupere le userTable qui est dans l'injecteur et le charge dans tableau et l'affiche dans l html
