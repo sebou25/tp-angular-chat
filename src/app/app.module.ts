@@ -13,8 +13,7 @@ import { InjectTabService } from './inject-tab.service';
     AppComponent,
     CreatCountComponent,
     DisplayMsgComponent,
-    ConnectionComponent,
-   
+    ConnectionComponent,  
   ],
   imports: [
     BrowserModule,
