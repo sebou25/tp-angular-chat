@@ -4,12 +4,12 @@
 
 <div class="nomPass">
 
-  <label>Votre pseudo</label> 
-  <input type="text" placeholder="Speudo" autofocus required>
+  <label>Votre pseudo</label>
+  <input #pseudoe type="text" placeholder="Speudo" autofocus required>
 
-  <label>Votre password</label> 
-  <input type="text" placeholder="Password" required>
+  <label>Votre password</label>
+  <input #pass type="password" placeholder="Password" required>
 
-  <button routerLink ="displayMsg">Valider</button>
+  <button (click) = "connection(pseudoe,pass)" routerLink ="displayMsg">Valider</button>
 
   </div>

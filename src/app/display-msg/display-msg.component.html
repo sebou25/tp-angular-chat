@@ -6,11 +6,11 @@
 </div>
 <div class="tableauMess">
 <table>
-  <tr>
+  <!-- <tr>
     <th>auteur</th>
     <th>message</th>
-    <th>heure</th>  
-  </tr>
+    <th>heure</th>
+  </tr> -->
   <tr *ngFor = "let msg of messages">
       <td>{{msg.auteur}}</td>
       <td>{{msg.message}}</td>
@@ -19,7 +19,7 @@
 </table>
 </div>
 
-<div class="recpMsg">
+<!-- <div class="recpMsg">
   <table>
     <tr>
       <th>nom</th>
@@ -35,12 +35,11 @@
     </tr>
   </table>
 
-</div>
+</div> -->
 <div class="titreTchat">
-  <h2 class="titreTchat">TCHAT</h2>
+
   <input class="boiteMsg" #messagee type="text" placeholder="taper message">
-  <button class="btEnv"  (click) = "creatMessage(messagee.value)">ENVOYER</button>
+  <button class="btEnv"  (click) = "creatMessage(messagee)">ENVOYER</button>
   <!-- <button routerLink="displayMsg" (click) = "creatUser(passe.value, emaile.value, pseudoe.value, nome.value)">Valider</button>
      -->
 </div>
-

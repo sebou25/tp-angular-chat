@@ -1,32 +1,47 @@
 .titrePerConct{
-    border: solid 1px #248dd8 ; 
+    border: double 8px #248dd8;
     width: 20%;
     padding: 10px;
+    margin-bottom: 50px;
+    background-color: rebeccapurple;
+    font-weight: bold;
+    
 }
 .boiteMsg{
     width: 93%;
     padding: 8px;
-    border: solid 2PX #248dd8 ;
-    border-right: white;
+    border: solid 2PX #248dd8 ;  
 }
 .btEnv{
     padding: 8px;
     background-color: rebeccapurple;
     color: white;
     border-color: #248dd8 ;
+    cursor: -webkit-grab; cursor: grab;
+    margin-left: 4px;
 }
 
-.titreTchat{
-    text-align: center;
-    margin-top: 15%;
-}
+
 .tableauMess{
     border: #248dd8 solid 2px;
+    background-image: url("imgMess/fondMess.png");
+    background-size: auto;
 }
 .tableauMess table{
     display:flex;
     justify-content: center;
 }
 table{
-    padding: 20px;
+    padding: 40px;
+}
+.titreTchat
+{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    bottom: 0;
+    margin-top: 160px;
+}
+td{
+    font-weight: bolder;
+    padding: 15px 60px 30px 60px;
 }

@@ -10,23 +10,23 @@ import { Inject } from '@angular/compiler/src/core';
 export class DisplayMsgComponent implements OnInit {
   constructor(private myservice: InjectTabService) { }
   //declaration des variables
- tableau;
+ userTab;
  messages;
- 
+ auteur;
 
   ngOnInit() {
 //recupere le userTable qui est dans l'injecteur et le charge dans tableau et l'affiche dans l html
-    this.tableau = this.myservice.userTab;
+    this.userTab = this.myservice.userTab;
     this.messages = this.myservice.msgTab;
-    
+    this.auteur = sessionStorage.getItem('pseudo');
   }
 
   //Recuperer les message saisi de l input
-  messageSaisi = '';
   creatMessage(messageSaisi) {
-    this.messageSaisi = messageSaisi;
-  
-//injecter les saisie (creatUser) des input dans le tableau(userTab)
-   this.messages.push({auteur:"alice", message:this.messageSaisi, heure:this.myservice.donneHeure()});
+    if(messageSaisi.value != ""){
+      //injecter les saisie (creatUser) des input dans le tableau(userTab)
+      this.messages.push({auteur:this.auteur, message:messageSaisi.value, heure:this.myservice.donneHeure()});
+      messageSaisi.value = "";
+    }
   }
 }
