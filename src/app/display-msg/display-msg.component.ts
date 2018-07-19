@@ -12,12 +12,7 @@ export class DisplayMsgComponent implements OnInit {
   //declaration des variables
  userTab;
  messages;
-<<<<<<< HEAD
- auteur = sessionStorage.getItem('pseudo');
- 
-=======
  auteur;
->>>>>>> 958d30a03c7f07363d62aee82987a4830b6af503
 
   ngOnInit() {
 //recupere le userTable qui est dans l'injecteur et le charge dans tableau et l'affiche dans l html
